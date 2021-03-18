@@ -200,7 +200,7 @@ footer p {
         grid-template-areas: 
         "logo"
         "navbar";
-        margin-top: 20em;
+        margin-top: 5em;
     }
 
     .navbar {
