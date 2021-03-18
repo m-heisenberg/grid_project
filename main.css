@@ -226,7 +226,6 @@ footer p {
     }
 
     footer {
-        /* background: #1de9b6; */
         grid-area: footer;
         height: 5%;
         margin-top: 10em;
@@ -235,6 +234,5 @@ footer p {
     footer p {
         color: #666666;
         font-size: 8px;
-    
     }
 }
