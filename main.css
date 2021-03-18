@@ -1,0 +1,221 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+body {
+    background-color: #fff;
+    color: #111;
+    font-family:'Montserrat', sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr;
+    grid-template-areas: 
+    "logo"
+    "navbar";
+    margin: 1em;
+}
+
+.logo {
+    color: #111111;
+    cursor: pointer;
+    grid-area: logo;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #111;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: center;
+    padding-right: 3em;
+}
+
+.navbar ul {
+    display: flex; 
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #7A7A7A;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 13px;
+    margin: 0 0.5em;
+    text-align: center;
+}
+
+  
+/* HOVER */     /* HOVER */     /* HOVER */     /* HOVER */
+
+a:hover {
+    color: #111;
+}
+
+.color {
+    filter: grayscale(90%);
+    transition: all 5s ease;
+    }
+    
+    .color:hover{
+    filter: grayscale(0%);
+    filter: gray;
+    filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+    } 
+
+
+
+/* CONTENT */    /* CONTENT */  /* CONTENT */   /* CONTENT */
+
+.container {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 0.6fr 0.6fr 0.6fr 0.6fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.05fr;
+    grid-template-areas: 
+    "content1 content2 content3 content4"
+    "content5 content6 content7 content8"
+    "content9 content10 content11 content12"
+    "footer footer footer footer";
+    grid-gap: 0.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 10vh;
+}
+
+#content1 {
+    background: #6fffd2;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    animation: skew 3s infinite;
+}
+
+#content2 { 
+    background: #085779bd;
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content3 {
+    background: #73ffba;
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#content4 {
+    background: #7185f5;
+    grid-area: content4;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#content5 {
+    background: #87f571;
+    grid-area: content5;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#content6 {
+    background: #f571ec;
+    grid-area: content6;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#content7 {
+    background: #ddf571;
+    grid-area: content7;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#content8 {
+    background: #f59671;
+    grid-area: content8;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#content9 {
+    background: #f5719b;
+    grid-area: content9;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#content10 {
+    background: #7196f5;
+    grid-area: content10;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#content11 {
+    background: #f5d071;
+    grid-area: content11;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#content12 {
+    background: #aff571;
+    grid-area: content12;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+footer {
+    /* background: #1de9b6; */
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+footer p {
+    color: #666666;
+    font-size: 11px;
+}
+
+@media only screen and (max-width:550px){
+
+    nav {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.2fr;
+        grid-template-areas: 
+        "logo"
+        "navbar";
+        margin-top: 20em;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .navbar ul {
+        margin: 1em;
+        padding: 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 0.4fr;
+        grid-template-areas: 
+        "footer";
+    }
+}
