@@ -222,12 +222,14 @@ footer p {
         grid-template-areas: 
         "footer";
         margin: 0 auto;
+        height: 100%;
     }
 
     footer {
         /* background: #1de9b6; */
         grid-area: footer;
         height: 5%;
+        margin-top: 10em;
     }
     
     footer p {
