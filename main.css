@@ -205,17 +205,34 @@ footer p {
 
     .navbar {
         display: flex;
+        padding: 0;
+        margin: 2em;
     }
 
     .navbar ul {
         margin: 1em;
         padding: 0;
+        display: inline-block;
+        text-align: center;
     }
 
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 0.4fr;
+        grid-template-rows: 1fr;
         grid-template-areas: 
         "footer";
+        margin: 0 auto;
+    }
+
+    footer {
+        /* background: #1de9b6; */
+        grid-area: footer;
+        height: 5%;
+    }
+    
+    footer p {
+        color: #666666;
+        font-size: 8px;
+    
     }
 }
